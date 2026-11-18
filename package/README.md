@@ -4,7 +4,7 @@
 
 ### Satu endpoint untuk semua model. Model tetap. Limit diatasi. Panel bergerak.
 
-[![Private repository](https://img.shields.io/badge/repo-private-6366f1?style=for-the-badge)](https://github.com/erlandi-main-api/erlandi-router)
+[![Public repository](https://img.shields.io/badge/repo-public-22c55e?style=for-the-badge)](https://github.com/erlandi-main-api/erlandi-router)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D22.5-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Go](https://img.shields.io/badge/tls%20relay-go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/license-GPL--3.0-ef4444?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html)
@@ -277,6 +277,36 @@ myapi/nama-model
 | `/bansos/usage` | GET | Statistik token |
 | `/bansos/events` | GET | Activity real-time |
 | `/bansos/refresh` | POST | Refresh katalog model |
+
+---
+
+## Cara install dari repo ini
+
+Source siap pakai ada di folder [`package/`](package/).
+
+```bash
+git clone https://github.com/erlandi-main-api/erlandi-router.git
+cd erlandi-router/package
+npm install -g .
+```
+
+Binary: `erlandi-router` atau `erlandi`.
+
+Lalu ikuti tutorial lengkap di atas (konfigurasi `~/.bansos/config.json`, jalankan router, TLS relay, WARP). Versi ringkas ada di [`INSTALL.md`](INSTALL.md).
+
+---
+
+## Isi repo
+
+| Path | Isi |
+|---|---|
+| `README.md` | Dokumentasi utama (file ini) |
+| `INSTALL.md` | Instalasi cepat |
+| `assets/preview.svg` | Preview dashboard |
+| `package/` | Source siap install (CLI + panel web) |
+| `package/dist/` | Binary CLI dan aset panel |
+| `package/zen-tls-relay/` | Source Go TLS relay untuk DeepSeek |
+| `package/docs/` | Dokumentasi teknis lanjutan |
 
 ---
 
