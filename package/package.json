@@ -1,0 +1,17 @@
+{
+  "name": "erlandi-router",
+  "version": "1.0.0",
+  "description": "Erlandi Router — fixed-model AI gateway with Infinity sessions, combos and a motion dashboard. Modified fork of bansos-router.",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "bin": {
+    "erlandi-router": "dist/cli/index.js",
+    "erlandi": "dist/cli/index.js"
+  },
+  "files": ["dist", "docs", "zen-tls-relay", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node dist/cli/index.js daemon"
+  },
+  "keywords": ["ai-gateway","router","fixed-model","openai-compatible","opencode","deepseek"]
+}
