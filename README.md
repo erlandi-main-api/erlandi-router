@@ -133,13 +133,15 @@ Erlandi Router :63011
 
 ### Langkah 1 — Siapkan source
 
+Repo ini sudah berisi binary CLI dan panel yang telah di-build. Tidak perlu `npm run build`.
+
 ```bash
-git clone <URL_REPO_PRIVATE> erlandi-router
-cd erlandi-router
-npm install
-npm run build
-npm i -g .
+git clone https://github.com/erlandi-main-api/erlandi-router.git
+cd erlandi-router/package
+npm install -g .
 ```
+
+Binary tersedia sebagai `erlandi-router` dan `erlandi`.
 
 ### Langkah 2 — Konfigurasi router
 
